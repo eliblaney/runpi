@@ -21,7 +21,7 @@ shift $((OPTIND-1))
 echo "> This script will install a Raspberry Pi emulator on your macOS computer."
 echo "> It will take up approximately 7 GB of space on your computer. Press Ctrl + C to abort."
 
-echo "> [3/8] Creating installation directory at ~/.raspberrypi
+echo "> [3/8] Creating installation directory at ~/.raspberrypi"
 mkdir ~/.raspberrypi
 
 echo "> [4/8] Downloading required scripts..."
@@ -38,7 +38,7 @@ sudo ln -sf ~/.raspberrypi/runpi.sh /usr/local/bin/runpi
 echo "> [6/8] Installing the Linux kernel..."
 curl https://eliblaney.com/raspberrypi/kernel-qemu-4.19.50-buster > ~/.raspberrypi/kernel-qemu-4.19.50-buster 
 
-echo "> [7/8] Installing Raspbian (this may take a while)..."
+echo "> [7/8] Installing Raspbian [this may take a while]..."
 curl https://eliblaney.com/raspberrypi/raspbian-buster.qcow > ~/.raspberrypi/raspbian-buster.qcow 
 
 echo "> [8/8] Installing versatile-pb.dtb..."
